@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COAST / CLUB — Cobalt and Coral Beach Club</title>
+    <!-- Google Fonts for editorial typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SECTION 1: HEADER & HERO -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">COAST / CLUB</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#dining">Dining</a></li>
+                <li><a href="#club">The Club</a></li>
+                <li><a href="#location">Location</a></li>
+            </ul>
+            <div class="nav-right-actions">
+                <a href="#reserve" class="btn-reserve-top">RESERVE</a>
+                <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+            <div class="hero-text-box">
+                <h1 class="hero-title">A little closer to the sea.</h1>
+                <div class="hero-subtitle-meta">
+                    <span class="dash"></span>
+                    <span>SUN</span>
+                    <span>GOOD FOOD</span>
+                    <span>BRIGHTER DAYS</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 2: EXPERIENCES / 3-CARD HIGHLIGHTS GRID -->
+    <section class="highlights-section" id="experiences">
+        <div class="cards-grid">
+            <!-- Card 1 -->
+            <div class="highlight-card">
+                <div class="card-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80" alt="Beach Dining Dish">
+                </div>
+                <div class="card-content">
+                    <span class="card-number">01</span>
+                    <div class="card-info">
+                        <h3>Beach Dining</h3>
+                        <p>Seasonal flavours, seaside tables.</p>
+                    </div>
+                    <span class="card-arrow">&rarr;</span>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="highlight-card">
+                <div class="card-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="The Beach Loungers">
+                </div>
+                <div class="card-content">
+                    <span class="card-number">02</span>
+                    <div class="card-info">
+                        <h3>The Beach</h3>
+                        <p>All day sun, crystal clear waters.</p>
+                    </div>
+                    <span class="card-arrow">&rarr;</span>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="highlight-card">
+                <div class="card-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800&q=80" alt="The Pool Cliffside">
+                </div>
+                <div class="card-content">
+                    <span class="card-number">03</span>
+                    <div class="card-info">
+                        <h3>The Pool</h3>
+                        <p>Relax, recharge, repeat.</p>
+                    </div>
+                    <span class="card-arrow">&rarr;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: EDITORIAL SPLIT FEATURE -->
+    <section class="feature-split-section" id="club">
+        <div class="split-image-side">
+            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80" alt="Mediterranean Villa Lounge view">
+        </div>
+        <div class="split-text-side">
+            <div class="split-text-inner">
+                <span class="section-tag">MORE THAN A BEACH CLUB</span>
+                <h2 class="split-title">Sunlight Tastes Better Here.</h2>
+                <p class="split-description">
+                    Long lunches, salt in the air, and time that slows down. A place to gather, unwind and feel a little closer to what matters.
+                </p>
+                <a href="#" class="story-link">
+                    <span>OUR STORY</span>
+                    <span class="arrow">&rarr;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: INTERACTIVE RESERVATION BANNER -->
+    <section class="reservation-section" id="reserve">
+        <div class="reservation-container">
+            <div class="reservation-intro">
+                <span class="tiny-label">PLAN YOUR VISIT</span>
+                <h2>Make It a Day to Remember.</h2>
+                <div class="res-sub-nav">
+                    <span>BEACH</span>
+                    <span>DINING</span>
+                    <span>POOL</span>
+                    <span>GOOD COMPANY</span>
+                </div>
+            </div>
+            
+            <form class="reservation-form" id="reservationForm">
+                <div class="form-field">
+                    <label for="date">DATE</label>
+                    <input type="text" id="dateInput" placeholder="Select date" required>
+                </div>
+                <div class="form-field">
+                    <label for="guests">GUESTS</label>
+                    <select id="guests">
+                        <option>2 Guests</option>
+                        <option>1 Guest</option>
+                        <option>3 Guests</option>
+                        <option>4+ Guests</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-submit-table">RESERVE A TABLE</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- SECTION 5: FOOTER & LOCATION DETAILS -->
+    <footer class="footer-section" id="location">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>COAST / CLUB</h3>
+                <p>Amalfi Coast, Italy</p>
+                <p class="copyright">© 2026 Coast Club Concepts. All rights reserved.</p>
+            </div>
+            <div class="footer-col links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#dining">Dining</a></li>
+                    <li><a href="#club">The Club</a></li>
+                    <li><a href="#location">Location</a></li>
+                </ul>
+            </div>
+            <div class="footer-col newsletter">
+                <h4>Stay Connected</h4>
+                <p>Receive private invitations and seasonal updates.</p>
+                <div class="newsletter-input-group">
+                    <input type="email" id="newsletterEmail" placeholder="Enter your email">
+                    <button type="button" id="newsletterBtn">Join</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
