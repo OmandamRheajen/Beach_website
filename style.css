@@ -41,14 +41,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
     left:0;
     width: 100%;
     flex-wrap: wrap;
     gap: 1.5rem;
-    background: rgba(11, 34, 69, 0.4); /* Optional: semi-transparent background so text doesn't clash when scrolling */
-    backdrop-filter: blur(8px);       /* Optional: adds a modern frosted glass blur effect */
+    background: rgba(11, 34, 69, 0.4); 
+    backdrop-filter: blur(8px);      
     padding: 1rem 0;
     z-index: 1000;
 }
